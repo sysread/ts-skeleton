@@ -7,10 +7,10 @@ setup for anyone who just wants to tinker with typescript.
 
 ## Use
 
-  git clone https://github.com/sysread/ts-skeleton.git
-  npm install
-  npm run build
-  # open index.html in a browser
+    git clone https://github.com/sysread/ts-skeleton.git
+    npm install
+    npm run build
+    # open index.html in a browser
 
 ## Architecture
 
