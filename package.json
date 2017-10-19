@@ -1,0 +1,14 @@
+{
+  "name": "ts-skeleton",
+  "scripts": {
+    "clean": "rm -R dist/*",
+    "build": "tsc --pretty",
+    "watch": "tsc --pretty -w"
+  },
+  "devDependencies": {
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "requirejs": "^2.3.5"
+  }
+}
