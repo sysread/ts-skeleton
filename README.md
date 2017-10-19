@@ -17,9 +17,10 @@ setup for anyone who just wants to tinker with typescript.
 
 ## Architecture
 
-There isn't any. The skeleton has two dependencies, typescript and requirejs
-for handling imports. Code goes in `lib`. `lib/app.ts` is your entry point.
-The `main()` function there is called when the app loads in the browser.
+There isn't any. The skeleton has three dependencies, typescript, requirejs for
+handling imports, and jasmine for testing. Code goes in `lib`. `lib/app.ts` is
+your entry point. The `main()` function there is called when the app loads in
+the browser.
 
 `index.html` loads requirejs, requirejs loads `loader.js`, `loader.js` loads
 `dist/app.js` and calls `app.main()`.
