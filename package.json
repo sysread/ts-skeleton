@@ -1,11 +1,13 @@
 {
   "name": "ts-skeleton",
   "scripts": {
-    "clean": "rm -R dist/*",
-    "build": "tsc --pretty",
-    "watch": "tsc --pretty -w"
+    "clean" : "rm -R dist/* spec/dist/*",
+    "build" : "tsc --pretty",
+    "watch" : "tsc --pretty -w",
+    "test"  : "tsc --pretty -p tsconfig.spec.json && jasmine"
   },
   "devDependencies": {
+    "jasmine": "^2.8.0",
     "typescript": "^2.5.3"
   },
   "dependencies": {

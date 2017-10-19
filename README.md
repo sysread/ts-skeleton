@@ -8,7 +8,10 @@ setup for anyone who just wants to tinker with typescript.
 ## Use
 
     git clone https://github.com/sysread/ts-skeleton.git
-    npm install
+    # then delete .git, or
+    svn export https://github.com/sysread/ts-skeleton/trunk
+
+    npm install --save-dev
     npm run build
     # open index.html in a browser
 
@@ -23,15 +26,19 @@ The `main()` function there is called when the app loads in the browser.
 
 ## Commands
 
+### `npm run clean`
+
+Empties `dist/`.
+
 ### `npm run build`
 
-Compiles `lib/**/*.ts` to `dist/`.
+Cleans, then compiles `lib/**/*.ts` to `dist/`.
 
 ### `npm run watch`
 
 Same as `build`, but the compiler keeps running, rebuilding anything that
 changes.
 
-### `npm run clean`
+### `npm run test`
 
-Empties `dist/`.
+Runs jasmine tests in `spec/`.
